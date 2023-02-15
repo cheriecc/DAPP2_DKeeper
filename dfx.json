@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "dKeeper_backend": {
+      "main": "src/dKeeper_backend/main.mo",
+      "type": "motoko"
+    },
+    "dKeeper_frontend": {
+      "dependencies": [
+        "dKeeper_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dKeeper_frontend/src/index.html"
+      },
+      "source": [
+        "src/dKeeper_frontend/assets",
+        "dist/dKeeper_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
